@@ -5,12 +5,12 @@
 class GoCliTools < Formula
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.3.1"
+  version "1.3.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.1/homebrew-tools_Darwin_x86_64.tar.gz"
-      sha256 "decf84f60535a259b5c9cba616849b269d635419d83dacb4e94951c37bc95f2b"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.2/homebrew-tools_Darwin_x86_64.tar.gz"
+      sha256 "371ec3e130908c5333bfd1742f5c76da7640e9608f30ee9c9c0c6dcaae934254"
 
       def install
         bin.install "convert-heic-to-jpg"
@@ -20,8 +20,8 @@ class GoCliTools < Formula
       end
     end
     on_arm do
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.1/homebrew-tools_Darwin_arm64.tar.gz"
-      sha256 "7bc726b87a0b1f6cd87e2ea0b9b66bb78996420ecff3f7bc9acc9f398a3b70e0"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.2/homebrew-tools_Darwin_arm64.tar.gz"
+      sha256 "a15dc158a177e6a53553720b2269c1b25beea3c71706a7eb5e0d92b4843ef5d1"
 
       def install
         bin.install "convert-heic-to-jpg"
@@ -35,8 +35,8 @@ class GoCliTools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.1/homebrew-tools_Linux_x86_64.tar.gz"
-        sha256 "8e24262998f277d94a37b9f254c578095b70be211c7644fd6256dc016caca167"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.2/homebrew-tools_Linux_x86_64.tar.gz"
+        sha256 "94bcc997a39343baf9dd206af3bf2f6145a04193d3211b6c0a98ca39be456619"
 
         def install
           bin.install "convert-heic-to-jpg"
@@ -48,8 +48,8 @@ class GoCliTools < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.1/homebrew-tools_Linux_arm64.tar.gz"
-        sha256 "980b6901aca61e3b4fbf58ecd56ee48cd15efe530d2b6cb32848feb55a278bfd"
+        url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.3.2/homebrew-tools_Linux_arm64.tar.gz"
+        sha256 "f69740d54cb5b6b9e85212f3f66f5fe5056cbdbc78c9f4b486279130133dcafd"
 
         def install
           bin.install "convert-heic-to-jpg"
