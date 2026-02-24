@@ -56,7 +56,7 @@ convert-heic-to-jpg <dir>
 
 Converts .heic (case-insensitive) images to .jpg
 
-### convert_m4a_to_mp3
+### convert-m4a-to-mp3
 Converts .m4a audio files to .mp3
 
 ```bash
