@@ -5,29 +5,31 @@
 class GoCliTools < Formula
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.4.0"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.4.0/homebrew-tools_Darwin_x86_64.tar.gz"
-      sha256 "d5f2f1b989cb18efb74d7634fea6d1f310db6b56600584cd31eb64573c99b5e9"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.5.0/homebrew-tools_Darwin_x86_64.tar.gz"
+      sha256 "3904a417f9e839860290cf38e8b7aa20f7f9fb3ff9f8b420022b7ff59309edc5"
 
       define_method(:install) do
         bin.install "convert-heic-to-jpg"
         bin.install "convert-m4a-to-mp3"
         bin.install "date-photos"
+        bin.install "normalize-audio"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.4.0/homebrew-tools_Darwin_arm64.tar.gz"
-      sha256 "de7e25fe443dee6da5c21177563d0dc8c9223e222de22375b4083994bac1058e"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.5.0/homebrew-tools_Darwin_arm64.tar.gz"
+      sha256 "1b34ed44ab6414cc1060118b75c394624eff1ccf3aad70ba6ec355cae0ff7fab"
 
       define_method(:install) do
         bin.install "convert-heic-to-jpg"
         bin.install "convert-m4a-to-mp3"
         bin.install "date-photos"
+        bin.install "normalize-audio"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
       end
@@ -36,23 +38,25 @@ class GoCliTools < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.4.0/homebrew-tools_Linux_x86_64.tar.gz"
-      sha256 "9ef4135d4ea48409d3e76196b7e9811f342da53fa3ad9f0e3d4573f41970cc20"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.5.0/homebrew-tools_Linux_x86_64.tar.gz"
+      sha256 "eb00d20bdb6ac7cff4e4b66590909cc91233aae490b22c35cc1e96c23d3298c6"
       define_method(:install) do
         bin.install "convert-heic-to-jpg"
         bin.install "convert-m4a-to-mp3"
         bin.install "date-photos"
+        bin.install "normalize-audio"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.4.0/homebrew-tools_Linux_arm64.tar.gz"
-      sha256 "5f8e8be8ed91c555029f87560bf74be2c0cdd2ef5430a1522de9a7e44001f21d"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.5.0/homebrew-tools_Linux_arm64.tar.gz"
+      sha256 "03720c1db559390898c73de6211dff98601882a1bdfcf1a5a2ea394123a68248"
       define_method(:install) do
         bin.install "convert-heic-to-jpg"
         bin.install "convert-m4a-to-mp3"
         bin.install "date-photos"
+        bin.install "normalize-audio"
         bin.install "remove-duplicate-photos"
         bin.install "remove-files"
       end
