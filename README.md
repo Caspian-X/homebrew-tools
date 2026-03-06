@@ -63,3 +63,9 @@ Converts .m4a audio files to .mp3
 convert-m4a-to-mp3 [-delete/-d] <directory>
 ```
 
+### normalize-audio
+Normalizes the volume level of all the audio files in the given directory, copies them to the output direcotry. 
+
+```bash
+normalize-audio [-input <dir>] [-output <dir>] [-target <LUFS>] [-workers <n>]
+```
