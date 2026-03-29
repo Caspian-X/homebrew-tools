@@ -63,6 +63,17 @@ Converts .m4a audio files to .mp3
 convert-m4a-to-mp3 [-delete/-d] <directory>
 ```
 
+### dir-compare
+Compares two directories recursively for file differences based on filenames.
+Outputs a nicely formatted list showing:
+  - Files unique to the first directory
+  - Files unique to the second directory  
+  - Files with different sizes
+
+```bash
+dircompare <dir1> <dir2>
+```
+
 ### normalize-audio
 Normalizes the volume level of all the audio files in the given directory, copies them to the output direcotry. 
 
