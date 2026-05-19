@@ -3,7 +3,7 @@ cask "go-cli-tools" do
   name "go-cli-tools"
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.7.0"
+  version "1.7.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "go-cli-tools" do
   on_macos do
     on_intel do
       url "https://github.com/Caspian-X/go-cli-tools/releases/download/v#{version}/go-cli-tools_Darwin_x86_64.tar.gz"
-      sha256 "6fa954933dd0aa47d9c1da5ff5bc0834d92680dbb1b9986615a93a2a53f26a47"
+      sha256 "de3eb1286eb634ab6c8d2d680ef659ba257960201ece8b89fcbd454be6172e58"
     end
     on_arm do
       url "https://github.com/Caspian-X/go-cli-tools/releases/download/v#{version}/go-cli-tools_Darwin_arm64.tar.gz"
-      sha256 "8b95be49143bc580aa6bd99e389cc1ac615923dfa73b5078ff595757ea72e0a4"
+      sha256 "f7ae14ba86eabc0e30677e58ef9423c89e9c88ccf6c64565e818b8d055b4dac6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Caspian-X/go-cli-tools/releases/download/v#{version}/go-cli-tools_Linux_x86_64.tar.gz"
-      sha256 "b4fc66ffd577fab4303ff08c7d5a3e1a03e7c653a52c03eafd762aad96f24c16"
+      sha256 "f9f941bb839436fc08b63cf3e4d0c4152f1b65c3db5145233ccb57cd873fb2a3"
     end
     on_arm do
       url "https://github.com/Caspian-X/go-cli-tools/releases/download/v#{version}/go-cli-tools_Linux_arm64.tar.gz"
-      sha256 "9ee50d112b41037a39e1092fe717ca8560932b4534c7ddf95c7230e413fe927d"
+      sha256 "04ba832db53eae6b43dfc938103e06d1c9711f4b4ef1d422f1815b6fd584b2f2"
     end
   end
 
