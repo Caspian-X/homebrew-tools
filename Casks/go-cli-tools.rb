@@ -3,33 +3,40 @@ cask "go-cli-tools" do
   name "go-cli-tools"
   desc ""
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.7.1"
+  version "1.7.2"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "go-cli-tools"
+  binary "date-photos"
+  binary "remove-duplicate-photos"
+  binary "remove-files"
+  binary "convert-heic-to-jpg"
+  binary "convert-m4a-to-mp3"
+  binary "normalize-audio"
+  binary "dir-compare"
+  binary "check-thumbnails"
 
   on_macos do
     on_intel do
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v#{version}/homebrew-tools_Darwin_x86_64.tar.gz"
-      sha256 "32e6e92c159b92df423266c28437adf83ebc2b346a04ea7862ad587c9bcb91d5"
+      sha256 "be4eb9990c6471eb237d1ed4a6c24aca576b602ca60e8008cf0b7e7021373476"
     end
     on_arm do
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v#{version}/homebrew-tools_Darwin_arm64.tar.gz"
-      sha256 "68e6659babafaa42281028701ba7121f004392ca08ec6e16df5108c1b1873b98"
+      sha256 "8ef554cd5d29a124c88186267a61611254d5a639e0aa325a279144166d7e5023"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v#{version}/homebrew-tools_Linux_x86_64.tar.gz"
-      sha256 "fe0a215a12633c580d464d2b2d15027f1078f5b23afe4fb83f41c206026d2f87"
+      sha256 "eb15920b8cbdd4e64952664c53c2d1e43b9fd4dab898e8127281e85484ee6a85"
     end
     on_arm do
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v#{version}/homebrew-tools_Linux_arm64.tar.gz"
-      sha256 "f5d143369217a5a66e0c313809d51b264729d6c7cb5ce04a8111463bfb382d36"
+      sha256 "1780d68385a6e472b00c77e5a7b3bd529c1bb863aadbdfbafcbab1cd8b272f4b"
     end
   end
 
