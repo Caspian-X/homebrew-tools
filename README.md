@@ -74,6 +74,18 @@ Outputs a nicely formatted list showing:
 dircompare <dir1> <dir2>
 ```
 
+### check-thumbnails
+Description: Find thumbnail image files that don't have matching video file counterparts.
+Also reports videos that don't have matching thumbnails.
+
+Matching is done by comparing the entire filename stem (everything before the extension),
+with "-thumb" removed from thumbnails before comparison. Files must also have an
+sXXeXX-style season/episode prefix to be considered.
+```bash
+check-thumbnails [-flags] [directory]
+```
+> Flags: --delete/-d, --recursive/-r
+
 ### normalize-audio
 Normalizes the volume level of all the audio files in the given directory, copies them to the output direcotry. 
 
