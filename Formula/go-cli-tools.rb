@@ -7,25 +7,32 @@ class UgoUcliUtools < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.5/go-cli-tools_1.7.5_darwin_arm64.tar.gz"
-      sha256 "3f5a6f99e19fcf0d7fc655fe094af9c80f44bb8dcc249efa2d176ef3f6090db0"
+      sha256 "02af2d501e52937abf20f78e0a7afc85626e316047f5eff112434206ecbe32a4"
     else
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.5/go-cli-tools_1.7.5_darwin_amd64.tar.gz"
-      sha256 "51593383917bff1298a76ac5b55b759d3c8b6c31a3e2ea59b6d47f4c8470e858"
+      sha256 "bb947a661f7b636a080985db501ff5d4217a9df26a91aa21e31b2cacf6b34fe7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.5/go-cli-tools_1.7.5_linux_arm64.tar.gz"
-      sha256 "24dbe7f69c8cfdb33275a87be1325be64c1b64673f9b7a79c80285a5ceb7f39a"
+      sha256 "fc5d8c792c6c561f9093363720913a1b9c13608addfb2b6add6c92d04e705313"
     else
       url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.5/go-cli-tools_1.7.5_linux_amd64.tar.gz"
-      sha256 "4e27bdc6ffe38c33e2da95f940b1477f867aadccd716e92e7c988e7f8d0aa718"
+      sha256 "6297a288969897ebee87fbb7c1e8f112ca2c07b1fff91c633b1b304b03f2001a"
     end
   end
 
   def install
-    bin.install "check-thumbnails"\n    bin.install "convert-m4a-to-mp3"\n    bin.install "convert-heic-to-jpg"\n    bin.install "date-photos"\n    bin.install "dir-compare"\n    bin.install "normalize-audio"\n    bin.install "remove-duplicate-photos"\n    bin.install "remove-files"\n
+    bin.install "check-thumbnails"
+    bin.install "convert-m4a-to-mp3"
+    bin.install "convert-heic-to-jpg"
+    bin.install "date-photos"
+    bin.install "dir-compare"
+    bin.install "normalize-audio"
+    bin.install "remove-duplicate-photos"
+    bin.install "remove-files"
   end
 
   test do
