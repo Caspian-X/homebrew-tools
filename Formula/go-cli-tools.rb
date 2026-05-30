@@ -1,26 +1,26 @@
 class GoCliTools < Formula
   desc "A collection of Go CLI tools"
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.7.6"
+  version "1.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.6/go-cli-tools_1.7.6_darwin_arm64.tar.gz"
-      sha256 "09307ca6f8081079bf18c19249893cabd9c82e4e44d8246c307ba229325d0cac"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_darwin_arm64.tar.gz"
+      sha256 "7cbcd3f9fa23a7fb4e1604f2982025c35d4169bd18153badabdeee32536fb89c"
     else
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.6/go-cli-tools_1.7.6_darwin_amd64.tar.gz"
-      sha256 "dc8d060275e1171737acb58f864c97df349385993a75a40d31e7a5d4490209fd"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_darwin_amd64.tar.gz"
+      sha256 "66ba641a6f847f30970d5b23653cde72eed6d8d00e66e615c7d429e496b323af"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.6/go-cli-tools_1.7.6_linux_arm64.tar.gz"
-      sha256 "7f17cada96f5cfff1ced441f59e66cd0cb2c70db219c117757a0c1803270c817"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_linux_arm64.tar.gz"
+      sha256 "f1c76832ce5b432d6241d0a983bd7055b0b3bd7034cdcd1f73b3086ef363c070"
     else
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.7.6/go-cli-tools_1.7.6_linux_amd64.tar.gz"
-      sha256 "4efce93daffa1664e76d30233fbd43ab5ef213839b59bf81e34cada264cdc987"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_linux_amd64.tar.gz"
+      sha256 "a523dad4af865be67a240a419a7413e8ab59e473bc130c69cd5b40a06168065c"
     end
   end
 
@@ -33,6 +33,7 @@ class GoCliTools < Formula
     bin.install "normalize-audio"
     bin.install "remove-duplicate-photos"
     bin.install "remove-files"
+    bin.install "trim-video"
   end
 
   test do
