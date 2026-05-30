@@ -92,3 +92,10 @@ Normalizes the volume level of all the audio files in the given directory, copie
 ```bash
 normalize-audio [-input <dir>] [-output <dir>] [-target <LUFS>] [-workers <n>]
 ```
+
+### trim-video
+Description: Trim first and/or last milliseconds from video files using ffmpeg.
+
+```bash
+trim-video [-f first_ms] [-l last_ms] [-r] [-d] [-n] [-h] <file_or_directory>
+```
