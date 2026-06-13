@@ -64,14 +64,17 @@ convert-m4a-to-mp3 [-delete/-d] <directory>
 ```
 
 ### dir-compare
-Compares two directories recursively for file differences based on filenames.
+Description: Compare two directories recursively for file differences based on filenames.
 Outputs a nicely formatted list showing:
   - Files unique to the first directory
-  - Files unique to the second directory  
+  - Files unique to the second directory
   - Files with different sizes
 
+Flags:
+  --skip-noise, -s    Ignore noise files (.DS_Store, ._*)
+
 ```bash
-dircompare <dir1> <dir2>
+dir-compare [--skip-noise | -s] <dir1> <dir2>
 ```
 
 ### check-thumbnails
