@@ -1,26 +1,26 @@
 class GoCliTools < Formula
   desc "A collection of Go CLI tools"
   homepage "https://github.com/Caspian-X/homebrew-tools"
-  version "1.8.0"
+  version "1.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_darwin_arm64.tar.gz"
-      sha256 "7cbcd3f9fa23a7fb4e1604f2982025c35d4169bd18153badabdeee32536fb89c"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.1/go-cli-tools_1.8.1_darwin_arm64.tar.gz"
+      sha256 "fd3a3c9d4a8efa456ba7f555c4006d328fa95732aa0a3345b709a707ec203788"
     else
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_darwin_amd64.tar.gz"
-      sha256 "66ba641a6f847f30970d5b23653cde72eed6d8d00e66e615c7d429e496b323af"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.1/go-cli-tools_1.8.1_darwin_amd64.tar.gz"
+      sha256 "70062b2f06c4a3482c36b01f632bccd01acb0aeb585aa5274fdf070ad9a26f2f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_linux_arm64.tar.gz"
-      sha256 "f1c76832ce5b432d6241d0a983bd7055b0b3bd7034cdcd1f73b3086ef363c070"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.1/go-cli-tools_1.8.1_linux_arm64.tar.gz"
+      sha256 "cc83d20c7d1343e15c15bede1a83570d425306d69ad47df02549571eb8086b50"
     else
-      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.0/go-cli-tools_1.8.0_linux_amd64.tar.gz"
-      sha256 "a523dad4af865be67a240a419a7413e8ab59e473bc130c69cd5b40a06168065c"
+      url "https://github.com/Caspian-X/homebrew-tools/releases/download/v1.8.1/go-cli-tools_1.8.1_linux_amd64.tar.gz"
+      sha256 "5ee48ec58f3e0484825bf9216c01094429b591148278748949776f27bfd83932"
     end
   end
 
