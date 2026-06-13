@@ -7,6 +7,7 @@ A collection of Go cli tools for homebrew.
 ```sh
 brew tap Caspian-X/tools
 brew install go-cli-tools
+brew trust caspian-x/tools
 ```
 
 ## Upgrade
